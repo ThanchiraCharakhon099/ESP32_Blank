@@ -1,2 +1,9 @@
+set(COMPONENT_REQUIRES driver)
+
 idf_component_register(SRCS "LED.c"
-                    INCLUDE_DIRS "include")
+                    
+
+                    INCLUDE_DIRS "include"
+                    REQUIRES driver
+                    )
+                    
